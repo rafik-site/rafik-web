@@ -538,13 +538,31 @@ export default function App() {
           <div className="text-2xl font-bold text-white mb-6">Rafik Web Design</div>
           <p className="mb-6">Création de sites web professionnels au Maroc.</p>
           <div className="flex justify-center gap-6 mb-8">
-            <a href={WHATSAPP_LINK} className="hover:text-white transition-colors">WhatsApp: {WHATSAPP_NUMBER}</a>
+            <a href={WHATSAPP_LINK} className="hover:text-white transition-colors inline-flex items-center gap-2">
+              <WhatsAppIcon className="w-4 h-4" />
+              <span>WhatsApp: {WHATSAPP_NUMBER}</span>
+            </a>
             <a href="mailto:contact@rafik.tech" className="hover:text-white transition-colors">contact@rafik.tech</a>
           </div>
           <p className="text-sm">&copy; {new Date().getFullYear()} Rafik Web Design. Tous droits réservés.</p>
         </div>
       </footer>
     </div>
+  );
+}
+
+function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      fill="currentColor"
+      viewBox="0 0 32 32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M19.11 17.44c-.17-.08-1-.49-1.16-.55-.16-.06-.27-.08-.39.08-.12.17-.45.55-.55.66-.1.12-.2.13-.37.04-.17-.08-.71-.26-1.35-.82-.5-.44-.84-.98-.94-1.15-.1-.17-.01-.26.07-.34.08-.08.17-.2.26-.3.09-.11.12-.18.18-.3.06-.12.03-.23-.01-.31-.04-.08-.39-.94-.53-1.29-.14-.34-.28-.29-.39-.29l-.33-.01c-.12 0-.31.04-.48.2-.17.17-.63.62-.63 1.51 0 .88.64 1.74.73 1.86.09.12 1.26 1.92 3.06 2.69.43.19.76.3 1.02.38.43.14.82.12 1.13.07.34-.05 1-.41 1.14-.81.14-.4.14-.74.1-.81-.04-.07-.16-.12-.33-.2z" />
+      <path d="M26.73 5.27A13.63 13.63 0 0 0 16.02 1.1C8.6 1.1 2.56 7.14 2.56 14.56c0 2.37.62 4.68 1.8 6.71L2.45 30.9l9.84-1.87a13.46 13.46 0 0 0 3.73.52h.01c7.42 0 13.46-6.04 13.46-13.46 0-3.6-1.4-6.98-3.76-9.32zm-10.71 22c-1.14 0-2.26-.17-3.33-.51l-.24-.07-5.84 1.11 1.11-5.69-.16-.26a11.18 11.18 0 0 1-1.7-5.93c0-6.2 5.05-11.25 11.26-11.25 3.01 0 5.84 1.17 7.97 3.29a11.19 11.19 0 0 1 3.3 7.96c0 6.2-5.05 11.35-11.37 11.35z" />
+    </svg>
   );
 }
 
@@ -855,4 +873,3 @@ function Calculator() {
     </div>
   );
 }
-
