@@ -20,7 +20,15 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="text-2xl font-bold text-orange-600">Rafik Web Design</div>
+          <div className="flex items-center gap-6">
+            <div className="text-2xl font-bold text-orange-600">Rafik Web Design</div>
+            <nav className="hidden md:flex items-center gap-6">
+              <a href="/rgym" className="flex items-center gap-2 text-slate-600 hover:text-orange-600 font-bold transition-colors">
+                <img src="/ricon.png" alt="R-GYM" className="w-6 h-6 rounded shadow-sm" />
+                R-GYM App
+              </a>
+            </nav>
+          </div>
           <a 
             href={WHATSAPP_LINK}
             target="_blank"
@@ -36,6 +44,12 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <section className="py-20 px-4 text-center max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <a href="/rgym" className="group relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-orange-600 to-orange-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
+              <img src="/ricon.png" alt="R-GYM" className="relative w-24 h-24 rounded-2xl shadow-xl transition-transform group-hover:scale-110" />
+            </a>
+          </div>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
             Création de Sites Web <span className="text-orange-600">Professionnels</span>
           </h1>

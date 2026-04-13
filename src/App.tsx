@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import RGym from './pages/RGym';
 import ProtectedRoute from './components/ProtectedRoute';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/rgym" element={<RGym />} />
         
         {/* Rutas de Licencias */}
         <Route path="/licencia">
