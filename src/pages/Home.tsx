@@ -556,7 +556,7 @@ export default function Home() {
               <WhatsAppIcon className="w-4 h-4" />
               <span>WhatsApp: {WHATSAPP_NUMBER}</span>
             </a>
-            <a href="mailto:contact@rafik.tech" className="hover:text-white transition-colors">contact@rafik.tech</a>
+            <a href="mailto:contact@rafik.site" className="hover:text-white transition-colors">contact@rafik.site</a>
           </div>
           <p className="text-sm">&copy; {new Date().getFullYear()} Rafik Web Design. Tous droits réservés.</p>
         </div>
