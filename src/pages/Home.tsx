@@ -553,7 +553,7 @@ export default function Home() {
           <p className="mb-6">Création de sites web professionnels au Maroc.</p>
           <div className="flex justify-center gap-6 mb-8">
             <a href={WHATSAPP_LINK} className="hover:text-white transition-colors inline-flex items-center gap-2">
-              <WhatsAppIcon className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4" />
               <span>WhatsApp: {WHATSAPP_NUMBER}</span>
             </a>
             <a href="mailto:contact@rafik.site" className="hover:text-white transition-colors">contact@rafik.site</a>
