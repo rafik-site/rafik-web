@@ -74,13 +74,18 @@
     </style>
 </head>
 <body>
+    <script>
+        if (location.pathname === '/resto'){
+            location.replace('/resto/');
+        }
+    </script>
     <div class="container">
         <img src="../res.png" alt="Yokka Beach Club" class="logo">
         <p class="subtitle">Choisissez votre langue / Choose your language / Kies uw taal</p>
         
-        <a href="menuFR.html" class="lang-btn">Français</a>
-        <a href="menuEN.html" class="lang-btn">English</a>
-        <a href="menuNL.html" class="lang-btn">Nederlands</a>
+        <a href="/resto/menuFR.html" class="lang-btn">Français</a>
+        <a href="/resto/menuEN.html" class="lang-btn">English</a>
+        <a href="/resto/menuNL.html" class="lang-btn">Nederlands</a>
     </div>
 </body>
 </html>
